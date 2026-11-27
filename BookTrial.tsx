@@ -1,10 +1,10 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { CalendarCheck, CheckCircle2 } from 'lucide-react';
-import { createBookingRequest, useAuthState } from '../lib/authStore';
-import { findTutor, useTutors } from '../lib/dataService';
-import { SUBJECTS, type Booking } from '../lib/types';
-import { Avatar, Field, Spinner, Stars, btnPrimary, inputClass, rupees } from '../components/ui';
+import { createBookingRequest, useAuthState } from './authStore';
+import { findTutor, useTutors } from './dataService';
+import { SUBJECTS, type Booking } from './types';
+import { Avatar, Field, Spinner, Stars, btnPrimary, inputClass, rupees } from './ui';
 
 interface Props {
   state: ReturnType<typeof useAuthState>;
