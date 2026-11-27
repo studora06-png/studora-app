@@ -1,7 +1,7 @@
 import { Link, NavLink } from 'react-router-dom';
 import { GraduationCap, LogOut } from 'lucide-react';
-import type { AppState } from '../lib/authStore';
-import { signOut } from '../lib/authStore';
+import type { AppState } from './authStore';
+import { signOut } from './authStore';
 import { Avatar } from './ui';
 
 const navLinkClass = ({ isActive }: { isActive: boolean }) =>
