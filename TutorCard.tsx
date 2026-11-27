@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Clock, IndianRupee, MapPin } from 'lucide-react';
-import type { TeacherProfile } from '../lib/types';
+import type { TeacherProfile } from './types';
 import { Avatar, Badge, Stars } from './ui';
 
 export default function TutorCard({ tutor }: { tutor: TeacherProfile }) {
