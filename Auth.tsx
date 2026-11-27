@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { GraduationCap, Presentation } from 'lucide-react';
-import { signIn, signUp } from '../lib/authStore';
-import { ALL_GRADES, type Role } from '../lib/types';
-import { Field, btnGhost, btnPrimary, inputClass } from '../components/ui';
+import { signIn, signUp } from './authStore';
+import { ALL_GRADES, type Role } from './types';
+import { Field, btnGhost, btnPrimary, inputClass } from './ui';
 
 export default function Auth({ mode }: { mode: 'signin' | 'signup' }) {
   const isSignup = mode === 'signup';
