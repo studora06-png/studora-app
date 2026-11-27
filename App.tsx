@@ -2,16 +2,16 @@ import { BrowserRouter, Navigate, Route, Routes, useLocation } from 'react-route
 import { useEffect } from 'react';
 import { useAuthState } from './authStore';
 import Navbar from './Navbar';
-import Home from './pages/Home';
-import Tutors from './pages/Tutors';
-import TutorProfile from './pages/TutorProfile';
-import BookTrial from './pages/BookTrial';
-import Auth from './pages/Auth';
-import Teach from './pages/Teach';
-import StudentDashboard from './pages/StudentDashboard';
-import TeacherDashboard from './pages/TeacherDashboard';
-import TeacherProfileEditor from './pages/TeacherProfileEditor';
-import { Spinner } from './components/ui';
+import Home from './Home';
+import Tutors from './Tutors';
+import TutorProfile from './TutorProfile';
+import BookTrial from './BookTrial';
+import Auth from './Auth';
+import Teach from './Teach';
+import StudentDashboard from './StudentDashboard';
+import TeacherDashboard from './TeacherDashboard';
+import TeacherProfileEditor from './TeacherProfileEditor';
+import { Spinner } from './ui';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
