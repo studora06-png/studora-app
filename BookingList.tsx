@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { CalendarClock, CalendarDays, UserRound } from 'lucide-react';
-import type { Booking, TeacherProfile } from '../lib/types';
-import { Badge, EmptyState, statusBadgeTone } from '../components/ui';
+import type { Booking, TeacherProfile } from './types';
+import { Badge, EmptyState, statusBadgeTone } from './ui';
 
 export function BookingList({
   bookings,
