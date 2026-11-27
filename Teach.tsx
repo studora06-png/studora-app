@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { BadgeIndianRupee, CalendarClock, ShieldCheck, Users } from 'lucide-react';
-import { btnPrimary } from '../components/ui';
+import { btnPrimary } from './ui';
 
 export default function Teach() {
   return (
