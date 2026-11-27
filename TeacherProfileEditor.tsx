@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Plus, Trash2 } from 'lucide-react';
-import { updateMyTeacher, useAuthState } from '../lib/authStore';
-import { LANGUAGES, SUBJECTS, type Qualification, type AvailabilitySlot, type TeacherProfile } from '../lib/types';
-import { Spinner, btnGhost, btnPrimary, inputClass } from '../components/ui';
+import { updateMyTeacher, useAuthState } from './authStore';
+import { LANGUAGES, SUBJECTS, type Qualification, type AvailabilitySlot, type TeacherProfile } from './types';
+import { Spinner, btnGhost, btnPrimary, inputClass } from './ui';
 
 function newId(): string {
   return Math.random().toString(36).slice(2, 9);
