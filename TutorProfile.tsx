@@ -1,8 +1,8 @@
 import { Link, useParams } from 'react-router-dom';
 import { CalendarCheck, Clock, GraduationCap, MapPin, Sparkles } from 'lucide-react';
-import { findTutor, useTutors } from '../lib/dataService';
-import { gradeBand, GRADE_BAND_LABEL } from '../lib/types';
-import { Avatar, Badge, Spinner, Stars, btnPrimary, rupees } from '../components/ui';
+import { findTutor, useTutors } from './dataService';
+import { gradeBand, GRADE_BAND_LABEL } from './types';
+import { Avatar, Badge, Spinner, Stars, btnPrimary, rupees } from './ui';
 
 export default function TutorProfile() {
   const { uid } = useParams<{ uid: string }>();
