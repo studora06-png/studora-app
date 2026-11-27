@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, BadgeCheck, BookOpen, Globe2, Search, Star, Users } from 'lucide-react';
-import { useTutors } from '../lib/dataService';
-import TutorCard from '../components/TutorCard';
-import { btnPrimary } from '../components/ui';
+import { useTutors } from './dataService';
+import TutorCard from './TutorCard';
+import { btnPrimary } from './ui';
 
 export default function Home() {
   const { tutors } = useTutors();
