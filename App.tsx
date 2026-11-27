@@ -1,7 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useAuthState } from './authStore';
-import Navbar from './components/Navbar';
+import Navbar from './Navbar';
 import Home from './pages/Home';
 import Tutors from './pages/Tutors';
 import TutorProfile from './pages/TutorProfile';
