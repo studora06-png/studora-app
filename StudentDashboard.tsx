@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 import { Search } from 'lucide-react';
-import { useAuthState } from '../lib/authStore';
-import { useBookings, useTutors } from '../lib/dataService';
-import { BookingList } from '../components/BookingList';
-import { Spinner, btnPrimary } from '../components/ui';
+import { useAuthState } from './authStore';
+import { useBookings, useTutors } from './dataService';
+import { BookingList } from './BookingList';
+import { Spinner, btnPrimary } from './ui';
 
 export default function StudentDashboard({ state }: { state: ReturnType<typeof useAuthState> }) {
   const email = state.demoEmail;
