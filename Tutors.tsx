@@ -1,9 +1,9 @@
 import { useMemo, useState } from 'react';
 import { SearchX, SlidersHorizontal } from 'lucide-react';
-import { useTutors } from '../lib/dataService';
-import { LANGUAGES, SUBJECTS, gradeBand, GRADE_BAND_LABEL, ALL_GRADES } from '../lib/types';
-import TutorCard from '../components/TutorCard';
-import { EmptyState, Field, Spinner, btnGhost, inputClass } from '../components/ui';
+import { useTutors } from './dataService';
+import { LANGUAGES, SUBJECTS, gradeBand, GRADE_BAND_LABEL, ALL_GRADES } from './types';
+import TutorCard from './TutorCard';
+import { EmptyState, Field, Spinner, btnGhost, inputClass } from './ui';
 
 interface Filters {
   q: string;
