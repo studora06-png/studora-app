@@ -1,12 +1,11 @@
 import { Link } from 'react-router-dom';
 import { CalendarDays, Pencil, Presentation } from 'lucide-react';
-import type { useAuthState } from '../lib/authStore';
-import { setBookingStatus } from '../lib/authStore';
-import type { BookingStatus } from '../lib/types';
-import { useBookings, useTutors } from '../lib/dataService';
-import { BookingList } from '../components/BookingList';
-import { Avatar, Spinner, Stars, btnPrimary, rupees } from '../components/ui';
-
+import type { useAuthState } from './authStore';
+import { setBookingStatus } from './authStore';
+import type { BookingStatus } from './types';
+import { useBookings, useTutors } from './dataService';
+import BookingList from './BookingList';
+import { Avatar, Spinner, Stars, btnPrimary, rupees } from './ui';
 export default function TeacherDashboard({ state }: { state: ReturnType<typeof useAuthState> }) {
   const email = state.demoEmail;
   const uid = state.fbUser?.uid ?? null;
